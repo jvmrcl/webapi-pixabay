@@ -5,7 +5,7 @@ const ImageListView = ({ images, imagesAlt }) => {
   <div className='images-wrapper'>
     {images.map((img) => (
       <div className='image' key={img.id}>
-        <a href={img.pageURL} target='_blank'>
+        <a href={img.pageURL} target='_blank' rel="noreferrer">
           <img
             src={img.largeImageURL}
             alt=''
